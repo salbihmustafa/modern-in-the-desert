@@ -24,7 +24,8 @@ html, body{
 }
 
 .content {
-    margin-top: 3rem;
+    margin: 0 5rem;
+    border: 1px solid red;
     overflow: auto;
     flex: 1;
 }
@@ -33,10 +34,38 @@ html, body{
     margin: 0 auto;
 }
 
+header{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Bodoni';
+}
+
+.header-title{
+    font-size: 3em;
+}
+
+footer{
+    background-color: var(--third);
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title {
+    color: var(--white);
+}
+
 @media only screen and (max-width: 620px) {
     .header-title{
         color: blue;
         font-size: 2.5em !important;
+    }
+    .content{
+        margin: 0;
     }
 }
 
@@ -56,28 +85,4 @@ html, body{
     .footer-title{
         font-size: .75em !important;
     }
-}
-header{
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family:'Bodoni';
-    margin: 20px auto;
-}
-
-.header-title{
-    font-size: 3em;
-}
-
-footer{
-    background-color: var(--third);
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-title {
-    color: var(--white);
 }

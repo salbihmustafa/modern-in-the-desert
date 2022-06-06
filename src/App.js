@@ -13,6 +13,34 @@ const App = () => {
         </header>
         <div className="content">
           <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
+          <div className="center">Test</div>
         </div>
         <footer>
           <div className="footer-title">© 2022 Modern in the Desert, All rights reserved.</div>

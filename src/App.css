@@ -35,16 +35,12 @@ html, body{
 }
 
 header{
-    height: 5rem;
+    height: 10rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family:'Bodoni';
-}
-
-.header-title{
-    font-size: 3em;
 }
 
 footer{
@@ -59,29 +55,27 @@ footer{
     color: var(--white);
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.logo {
+    height: 10rem;
+    width: 10rem;
+}
+
 @media only screen and (max-width: 620px) {
-    .header-title{
-        color: blue;
-        font-size: 2.5em !important;
-    }
     .content{
         margin: 0;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .header-title{
-        color: red;
-        font-size: 1.75em !important;
-    }
+    
 }
 
 @media only screen and (max-width: 400px) {
-    .header-title{
-        color: green;
-        font-size: 1.5em !important;
-    }
-
     .footer-title{
         font-size: .75em !important;
     }

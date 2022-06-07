@@ -24,8 +24,8 @@ html, body{
 }
 
 .content {
-    margin: 0 5rem;
-    border: 1px solid red;
+    /* margin: 0 15rem; */
+    /* border: 1px solid red; */
     overflow: auto;
     flex: 1;
 }

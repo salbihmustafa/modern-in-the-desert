@@ -9,7 +9,8 @@
 }
 
 html, body{
-    background-color: var(--background);
+    /* background-color: var(--background); */
+    background: linear-gradient(to bottom right, var(--third) 0%, var(--primary) 100%);
     margin: 0;
     padding: 0;
     height: 100%;
@@ -25,7 +26,8 @@ html, body{
 
 .content {
     /* margin: 0 15rem; */
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     flex: 1;
 
     display: flex;
@@ -46,7 +48,7 @@ header{
 }
 
 footer{
-    background-color: var(--third);
+    background-color: var(--secondary);
     height: 2rem;
     display: flex;
     justify-content: center;
@@ -81,10 +83,15 @@ img {
 }
 
 @media only screen and (max-width: 500px) {
-    
+    html,body{
+        background: none;
+    }
 }
 
 @media only screen and (max-width: 400px) {
+    html,body{
+        background: none;
+    }
     header{
         height: 5rem;
     }

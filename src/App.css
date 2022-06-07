@@ -25,9 +25,11 @@ html, body{
 
 .content {
     /* margin: 0 15rem; */
-    /* border: 1px solid red; */
     overflow: auto;
     flex: 1;
+
+    display: flex;
+    justify-content: center;
 }
 
 .center{
@@ -35,7 +37,7 @@ html, body{
 }
 
 header{
-    height: 10rem;
+    height: 6rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -61,8 +63,15 @@ img {
     object-fit: contain;
 }
 .logo {
-    height: 10rem;
-    width: 10rem;
+    height: 6rem;
+    width: 6rem;
+}
+
+.react-pdf__Page__canvas {
+    margin: 0 auto;
+    width: 100% !important;
+    height: 500px !important;
+    object-fit: contain !important;
 }
 
 @media only screen and (max-width: 620px) {
@@ -76,6 +85,13 @@ img {
 }
 
 @media only screen and (max-width: 400px) {
+    header{
+        height: 5rem;
+    }
+    .logo {
+        height: 5rem;
+        width: 5rem;
+    }
     .footer-title{
         font-size: .75em !important;
     }

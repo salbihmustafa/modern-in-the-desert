@@ -1,19 +1,11 @@
 import "./App.css";
-import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./image/ModernInTheDesertLogo.jpg";
 import welcomebook from "./pdf/WelcomeBook.pdf";
-//import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
-import { Document, Page } from "react-pdf";
+import AllPages from "./components/AllPages/AllPages";
+import SinglePage from "./components/SinglePage/SinglePage";
 
 const App = () => {
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
-  const onDocumentLoadSuccess = ({ numPages }) => {
-    setNumPages(numPages);
-  };
-
   return (
     <div className="main-container">
       <header>
@@ -22,13 +14,7 @@ const App = () => {
         </div>
       </header>
       <div className="content">
-        <Document
-          file={welcomebook}
-          options={{ workerSrc: "pdf.worker.js" }}
-          onLoadSuccess={onDocumentLoadSuccess}
-        >
-          <Page pageNumber={1} />
-        </Document>
+        <AllPages pdf={welcomebook} />
       </div>
       <footer>
         <div className="footer-title">

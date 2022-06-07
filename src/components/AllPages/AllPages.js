@@ -23,6 +23,7 @@ const AllPages = ({ pdf }) => {
           </Card.Body>
         </Card>
       ))}
+      {/* Filler for photos */}
     </Document>
   );
 };

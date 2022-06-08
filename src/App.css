@@ -26,7 +26,7 @@ html, body{
 
 .content {
     /* margin: 0 15rem; */
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
     flex: 1;
 
@@ -69,22 +69,25 @@ img {
     width: 6rem;
 }
 
-embed {
-    margin: 0 auto !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
-}
-
 @media only screen and (max-width: 620px) {
     .content{
         margin: 0;
+    }
+    html,body{
+        background: none;
+    }
+    .pdf-container{
+        min-width: 100% !important;
     }
 }
 
 @media only screen and (max-width: 500px) {
     html,body{
         background: none;
+    }
+
+    .pdf-container{
+        min-width: 100% !important;
     }
 }
 
@@ -101,5 +104,8 @@ embed {
     }
     .footer-title{
         font-size: .75em !important;
+    }
+    .pdf-container{
+        min-width: 100% !important;
     }
 }

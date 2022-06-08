@@ -1,15 +1,18 @@
 import "./AllPages.css";
-import { Card } from "react-bootstrap";
+import PageArray from "../PageArray/PageArray";
 
-const AllPages = ({ pdf }) => {
+const AllPages = () => {
+  const {pages} = PageArray();
+
+  const pageContent = pages.map((page) => {
+    return (
+      <img key={page} src={page} alt="Modern in the Desert"/>
+    )
+  });
 
   return (
     <>
-      <Card className="custom-card-container">
-        <Card.Body className="card-body-content">
-          <embed src={pdf} />
-        </Card.Body>
-      </Card>
+      {pageContent}
     </>
   );
 };

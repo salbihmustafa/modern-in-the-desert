@@ -1,8 +1,8 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "./image/ModernInTheDesertLogo.png";
-import welcomebook from "./pdf/WelcomeBook.pdf";
+import logo from "./images/logo/ModernInTheDesertLogo.png";
 import AllPages from "./components/AllPages/AllPages";
+import { Card } from "react-bootstrap";
 
 const App = () => {
   return (
@@ -13,7 +13,9 @@ const App = () => {
         </div>
       </header>
       <div className="content">
-        <AllPages pdf={welcomebook} />
+        <Card className="pdf-container">
+          <AllPages/>
+        </Card>
       </div>
       <footer>
         <div className="footer-title">

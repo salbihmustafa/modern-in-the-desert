@@ -14,7 +14,7 @@ const App = () => {
         </div>
       </header>
       <div className="content">
-        <AllPages pdf={welcomebook} />
+        {/*}AllPages pdf={welcomebook} />*/}
       </div>
       <footer>
         <div className="footer-title">

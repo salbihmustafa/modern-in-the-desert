@@ -1,6 +1,6 @@
 import "./AllPages.css";
 import { useState } from "react";
-import { Document, Page } from "react-pdf";
+//import { Document, Page } from "react-pdf";
 import { Card } from "react-bootstrap";
 
 const AllPages = ({ pdf }) => {

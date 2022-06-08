@@ -1,8 +1,8 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./image/ModernInTheDesertLogo.png";
-//import welcomebook from "./pdf/WelcomeBook.pdf";
-//import AllPages from "./components/AllPages/AllPages";
+import welcomebook from "./pdf/WelcomeBook.pdf";
+import AllPages from "./components/AllPages/AllPages";
 //import SinglePage from "./components/SinglePage/SinglePage";
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
         </div>
       </header>
       <div className="content">
-        {/*<AllPages pdf={welcomebook} />*/}
+        <AllPages pdf={welcomebook} />
       </div>
       <footer>
         <div className="footer-title">
